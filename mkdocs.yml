@@ -1,0 +1,6 @@
+site_name: fastapi-tenants
+theme:
+  name: material
+
+nav:
+  - Home: index.md

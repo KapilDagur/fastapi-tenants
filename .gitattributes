@@ -1,0 +1,26 @@
+# Normalize line endings across OS
+* text=auto eol=lf
+
+# Treat these as binary (no diff/merge)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# Mark docs and configs as text
+*.md text
+*.rst text
+*.toml text
+*.yaml text
+*.yml text
+*.json text
+*.ini text
+
+# Python source code
+*.py text diff=python
+
+# Ignore generated files
+dist/ export-ignore
+build/ export-ignore
+*.egg-info/ export-ignore

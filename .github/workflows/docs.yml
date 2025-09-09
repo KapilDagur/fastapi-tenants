@@ -8,18 +8,24 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
+      # Checkout repository code
       - uses: actions/checkout@v4
+
+      # Setup Python environment
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      # Install MkDocs and Material theme
       - name: Install MkDocs
         run: pip install mkdocs mkdocs-material
 
+      # Build documentation site
       - name: Build docs
         run: mkdocs build --strict
 
-      - name: Deploy docs to GitHub Pages
+      # Deploy documentation to GitHub Pages
+      - name: Deploy docs
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

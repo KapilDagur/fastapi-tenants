@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome to fastapi-tenants","text":"<p>\ud83d\ude80 A multi-tenancy solution for FastAPI: - Database-per-tenant - Schema-per-tenant - Row-level tenancy</p>"}]}
